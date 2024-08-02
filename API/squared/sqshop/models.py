@@ -8,7 +8,7 @@ from sqshop.choices import *
 
 
 class Item(models.Model):
-    """Product model to store models"""
+    """Product model to store items/products"""
     name = models.CharField(max_length=100)
     size = models.CharField(choices=SIZE_CHOICES, max_length=10)
     price = models.DecimalField(max_digits=6, decimal_places=2)
